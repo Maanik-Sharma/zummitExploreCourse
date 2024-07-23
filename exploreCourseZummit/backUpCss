@@ -1,0 +1,310 @@
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #004d66 0%, #001a23 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+} */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f6f7f8 0%, #fbfbfb 100%);
+    min-height: 100vh;
+}
+
+
+  
+
+/* .testimonial-wrapper {
+    max-width: ;
+    margin: 0 auto;
+    padding: 20px;
+
+    background-image: url('assets/testimonial-bg.svg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 350px;
+} */
+
+.testimonial-wrapper {
+    max-width: 1700px; /* Ensure it covers full screen width */
+    margin: 0 auto;
+    padding: 20px;
+
+    background-image: url('assets/testimonial-bg.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+
+    border-radius: 50px; /* Adjust this value to achieve the desired cylindrical effect */
+}
+
+
+/* .container-testimonial{
+    background-image: url('assets/testimonial-bg.svg'); Replace with your image URL
+    background-size: cover; Optional
+    background-position: center; Optional
+    background-repeat: no-repeat;
+    height: 300px;
+}
+   */
+
+.testimonial-heading {
+    color: white;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.testimonial-carousel {
+    overflow: hidden;
+    padding-top: 60px;  /* Added to accommodate image overflow */
+}
+
+.testimonial-container {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card {
+    flex: 0 0 calc(33.333% - 40px);
+    margin: 0 50px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 3px solid #00ccff;
+}
+
+.testimonial-image {
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 3px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-name {
+    margin-top: 78px;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.testimonial-title {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.testimonial-rating {
+    color: gold;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.testimonial-text {
+    font-size: 0.9em;
+    line-height: 1.4;
+    color: #444;
+}
+
+@media (max-width: 900px) {
+    .testimonial-card {
+        flex: 0 0 calc(50% - 40px);
+    }
+}
+
+@media (max-width: 600px) {
+    .testimonial-card {
+        flex: 0 0 calc(100% - 40px);
+    }
+}
+
+@media (max-width: 900px) {
+    .testimonial-card {
+        flex: 0 0 calc(50% - 40px);
+    }
+}
+
+@media (max-width: 600px) {
+    .testimonial-card {
+        flex: 0 0 calc(100% - 40px);
+    }
+}
+
+
+
+
+
+
+
+/* .courseSection {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+} */
+.courseSection {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-top: 40px; /* Add some space between sections */
+    border-radius: 10px; /* Optional: adds rounded corners */
+}
+
+
+.course-explorer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.course-explorer__title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.course-explorer__categories {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.course-explorer__category-btn {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.course-explorer__category-btn.active {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+/* .course-explorer__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.course-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.course-card__image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.course-card__content {
+    padding: 20px;
+} */
+.course-explorer__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    justify-content: center;
+    min-height: 400px; /* Adjust this value as needed */
+    position: relative;
+}
+
+.course-explorer__empty-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1.5em;
+    color: #666;
+}
+
+.course-card {
+    background-color: white;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    max-width: 350px; /* Set a maximum width */
+    margin: 0 auto; /* Center the card if it's alone */
+    margin-bottom: 35px;
+}
+
+.course-card__image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.course-card__content {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.course-card__title {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+}
+
+.course-card__instructor {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.course-card__rating {
+    color: gold;
+    margin-bottom: 10px;
+}
+
+.course-card__meta {
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.course-card__price {
+    font-weight: bold;
+    color: #1a1a1a;
+}
+@media (min-width: 1200px) {
+    .course-explorer__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .course-explorer__categories {
+        flex-wrap: wrap;
+    }
+}
